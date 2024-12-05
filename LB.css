@@ -1,0 +1,234 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+/* Body */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfbfb;
+  align-items: center;
+}
+
+/* Navbar */
+.navibar {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  top:0;
+  left:0;
+  right:0;
+
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background:linear-gradient(90deg, #56bbff, #4190ff);
+  padding: 1vw 2.5vw;
+  box-shadow: 0 3px 3px #00000035;
+}
+
+.logo {
+  font-family:"ADLaM Display";
+  font-size: 32px;
+  color: white;
+
+  text-decoration:none;
+  margin-left:2fr;
+  margin-right: auto;
+  cursor:pointer;
+}
+
+form button{
+  float:right;
+  padding: 10.4px 20px;
+  color:#fff;
+  background:linear-gradient(90deg, #76dfff,#56bbff);
+  border-top-right-radius: 5px ;
+  border-bottom-right-radius: 5px;
+  border:none;
+}
+
+.icons {
+  display: flex;
+  gap: 2vw;
+  margin-left: auto;
+  margin-right:2fr;
+}
+
+.wish {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.wish:hover {
+  transform: scale(1.08);
+}
+
+
+.active {
+  color: rgb(255, 255, 255); /* Changes fill color to red */
+  transform: scale(1.1); /* Slightly enlarges the icon */
+}
+
+.gravity-ui--magnifier {
+  display: flex;
+  width: 1.3em;
+  height: 1.3em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M11.5 7a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-.82 4.74a6 6 0 1 1 1.06-1.06l2.79 2.79a.75.75 0 1 1-1.06 1.06z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.gravity-ui--heart {
+  display: flex;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  width: 2em;
+  height: 2em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M1.633 2.796c.762-.837 1.85-1.297 3.127-1.297c1.164 0 2.407.55 3.24 1.626c.828-1.075 2.066-1.626 3.24-1.626c1.274 0 2.36.458 3.124 1.293c.756.828 1.136 1.962 1.136 3.22c0 2.166-1.113 3.909-2.522 5.264c-1.405 1.352-3.17 2.383-4.633 3.14a.75.75 0 0 1-.693-.002c-1.463-.765-3.228-1.788-4.633-3.133C1.61 9.93.5 8.193.5 6.013c0-1.255.378-2.389 1.133-3.217m1.109 1.01C2.287 4.306 2 5.053 2 6.013c0 1.624.816 2.996 2.057 4.184c1.146 1.098 2.6 1.985 3.945 2.705c1.335-.71 2.79-1.604 3.937-2.707C13.182 8.998 14 7.62 14 6.013c0-.963-.288-1.71-.744-2.21C12.808 3.314 12.14 3 11.24 3c-.976 0-2.093.628-2.527 1.95a.75.75 0 0 1-1.426 0C6.854 3.63 5.725 3 4.76 3c-.903 0-1.57.315-2.018.807' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.gravity-ui--shopping-bag {
+  display:flex;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  width: 2em;
+  height: 2em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M5.174 3h5.652a1.5 1.5 0 0 1 1.49 1.328l.808 7A1.5 1.5 0 0 1 11.634 13H4.366a1.5 1.5 0 0 1-1.49-1.672l.808-7A1.5 1.5 0 0 1 5.174 3m-2.98 1.156A3 3 0 0 1 5.174 1.5h5.652a3 3 0 0 1 2.98 2.656l.808 7a3 3 0 0 1-2.98 3.344H4.366a3 3 0 0 1-2.98-3.344zM5 5.25a.75.75 0 0 1 1.5 0v.25a1.5 1.5 0 1 0 3 0v-.25a.75.75 0 0 1 1.5 0v.25a3 3 0 0 1-6 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.gravity-ui--person {
+  display:flex;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  width: 2em;
+  height: 2em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M10 4.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 0a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0m-9 8c0-.204.22-.809 1.32-1.459C4.838 10.44 6.32 10 8 10s3.162.44 4.18 1.041c1.1.65 1.32 1.255 1.32 1.459a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1m5.5-4c-3.85 0-7 2-7 4A2.5 2.5 0 0 0 3.5 15h9a2.5 2.5 0 0 0 2.5-2.5c0-2-3.15-4-7-4' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.gravity-ui--chevron-right {
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M5.47 13.03a.75.75 0 0 1 0-1.06L9.44 8L5.47 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+/*Footer*/
+footer {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  position: relative !important;
+  bottom:0 !important;
+  right: 0 !important;
+  left:0 !important;
+}
+
+footer ul {
+  list-style-type: none; /* Removes bullets */
+  padding-left: 0; /* Removes default padding */
+  margin-left: 0; /* Removes default margin */
+}
+
+footer ul li a {
+  color: #000 !important;
+}
+
+
+.ft-logo {
+  margin: 3vw;
+
+  cursor: default;
+}
+
+.log {
+  font-family:"ADLaM Display";
+  font-size: 32px;
+  background:linear-gradient(90deg, #56bbff, #4190ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  margin-left:2fr;
+  margin-right: auto;
+  cursor:default;
+}
+
+.ft-id {
+  text-align: right;
+  margin-right: auto;
+  margin-left:2fr;
+}
+
+.ft-about{
+  color: #000;
+}
+
+.ft-about h4 {
+  cursor: default;
+}
+
+.ft-about ul li a {
+  text-decoration: none;
+}
+
+.ft-contact {
+  cursor: default;
+}
+
+.ft-copyright {
+  font-family:"Andika";
+  font-weight:500;
+  font-style:italic;
+  color:#00000075;
+  margin: 2vw 5vw;
+  cursor: default;
+}

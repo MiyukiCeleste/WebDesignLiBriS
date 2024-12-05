@@ -1,0 +1,59 @@
+/* Banner Section */
+.banner {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.large-banner, .small-banner {
+  background: #bbb;
+  border-radius: 5px;
+}
+
+.large-banner {
+  height: 100px;
+}
+
+.small-banners {
+  display: block;
+}
+
+.small-banner {
+  height: 50px;
+}
+
+/* Book Categories */
+.categories {
+  display: flex;
+  width: 100%;
+  overflow-x: auto !important;
+  scroll-behavior: smooth !important;
+}
+
+.category {
+  padding: 5px;
+  margin: 5px 0;
+  font-size: 14px;
+  color: black;
+  background-color: #ddd;
+}
+
+/* Book Cards Section */
+.book-cards {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+.card {
+  width: 8em;
+  box-shadow: none;
+}
+
+.card img {
+  width: 70%;
+}
+
+.card-text {
+  font-size: 12px;
+}

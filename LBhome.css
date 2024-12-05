@@ -1,0 +1,135 @@
+/* Banner Section */
+.banner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 20px 0;
+    gap: 20px;
+  }
+  
+  .large-banner {
+    flex: 2;
+    flex-wrap: wrap;
+    height: 24vw;
+    background: linear-gradient(90deg, #66a6ff, #89f7fe);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .large-banner i {
+    flex-wrap: wrap;
+    font-family:"ADLaM Display";
+    font-size: 4vw;
+    color: #FFF;
+    padding: 0 18vw;
+    font-style: normal;
+  }
+
+  .large-banner span {
+    flex-wrap: wrap;
+    font-family:"ADLaM Display";
+    font-size: 6vw;
+    color: #FFF;
+    padding: 0 13.5vw;
+  }
+
+  .large-banner:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 6px rgba(82, 126, 165, 0.15);
+  }
+  
+  /* Book Categories */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    gap: 2vw;
+    width: 80%;
+    
+    margin-bottom: 20px;
+  }
+  
+  .category {
+    height:fit-content;
+    outline: 1% solid #c8c8c8 !important;
+    border-radius: 8px;
+
+    padding: 0.7em 1em;
+    margin: 1.5vw 0;
+    
+    font-family:"Andika";
+    font-size: 18px;
+    color:#000000;
+
+    background-color:#FFF !important;
+    font-weight:600 !important;
+
+    cursor: pointer;
+  }
+  
+  .category:hover {
+    box-shadow: 0 4px 6px rgba(82, 126, 165, 0.15);
+    transform: scale(1.05);
+  }
+
+  /* Book Cards Section */
+  a{
+    text-decoration: none !important;
+  }
+
+  .book-cards {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    overflow-x: auto !important;
+    scroll-behavior: smooth !important;
+    width: 80%;
+    padding:10px;
+    margin: 1vw 0;
+  }
+
+  .card{
+    height: 18em !important;
+    box-shadow: 0 2px 5px rgba(72, 99, 122, 0.1) !important;
+    transition: ease;
+  }
+
+  .card:hover{
+    transform: scale(1.035) !important;
+  }
+
+  .card img{
+    height:50% !important;
+    width:auto;
+    align-self: center !important;
+    border-radius:0 !important;
+    margin-top: 13px !important;
+    object-fit:cover;
+  }
+
+  .card-text {
+    margin-bottom:0em !important;
+  }
+  
+  .author {
+    font-family:"Inter";
+    font-size: 0.6em;
+    color: #707070;
+  }
+  
+  .book-title {
+    font-family:"Inter";
+    font-size: 0.72em;
+    font-weight:700;
+  }
+
+  .price {
+    font-family:"Inter";
+    font-size: 0.8em;
+    color: #00337b;
+    font-weight:750;
+  }
+  
