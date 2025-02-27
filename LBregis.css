@@ -16,7 +16,7 @@ body {
     background-size:cover;
 }
 
-.cont{
+.cont {
     top:0;
     bottom:0;
     width: 22em;
@@ -46,7 +46,11 @@ body {
     position: relative;
     width: 100%;
     height: 3em;
-    margin: 30px 0;
+    margin: 35px 0;
+}
+
+.input-box label {
+    font-size: 0.9em;
 }
 
 .input-box input{
@@ -68,46 +72,25 @@ body {
     color: #fff;
 }
 
-.input-box i{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
+.error-message {
+    color: rgb(13, 0, 255);
+    font-size: 14px;
+    font-weight: bold;
+    font-style:italic;
+    margin: 5% 0;
 }
 
-.cont .remember-me{
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8em;
-    margin: -15px 0 15px;
-    padding: 1.5% 0 3% 0;
-}
-
-.remember-me label input {
-    accent-color: #fff;
-    margin-right: 3px;
-    cursor:pointer;
-}
-
-.remember-me label {
-    cursor:pointer;
-}
-
-.remember-me a {
-    color: #fff;
-    text-decoration: none;
-}
 
 .cont .btn {
     width: 100%;
     height: 45px;
-    background: #fff;
+    background:linear-gradient(90deg, #2a65e3, #0846cd);
     border-radius: 40px;
     border: none;
     outline: none;
+    margin: 8% 0 0 0;
 
-    color: #2956b7;
+    color:white;
     font-size: 16px;
     font-weight: 600;
 
@@ -117,23 +100,4 @@ body {
 
 .cont .btn:hover {
     transform: scale(1.02);
-}
-
-.cont .register {
-    font-size: 14.5px;
-    text-align: center;
-    margin-top: 20px;
-    margin: 20px 0 15px;
-    cursor:default;
-}
-
-.register p a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.register p a:hover{
-    text-decoration: underline;
 }

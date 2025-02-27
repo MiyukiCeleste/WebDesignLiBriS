@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LiBriS - Register</title>
+
+    <link rel="stylesheet" href="LBregis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="cont">
+        <form id="registerForm">
+            <h2>Welcome to LiBriS!</h2>
+            <h1>Register</h1>
+            <div class="input-box">
+                <label class="label" for="username">Username</label>
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Re-confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+            </div>
+            
+            <p id="error-message" class="error-message"></p>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+    
+    <script>
+        const registerForm = document.getElementById("registerForm");
+        const password = document.getElementById("password");
+        const confirmPassword = document.getElementById("confirmPassword");
+        const errorMessage = document.getElementById("error-message");
+
+        registerForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+        if (password.value !== confirmPassword.value) {
+            errorMessage.textContent = "Passwords do not match. Please try again!";
+        } else {
+            errorMessage.textContent = "";
+            alert("Registration Successful!");
+
+            window.location.href = "loginpage.html";
+        }
+        });
+    </script>
+</body>
+</html>

@@ -1,6 +1,3 @@
-
-/* Libris Profile */
-
 .welcome {
     background:linear-gradient(90deg, #56bbff, #4190ff);
     -webkit-background-clip: text;
@@ -59,7 +56,6 @@
 }
 
 
-/* Founder Profiles */
 .profiles {
     display: flex;
     justify-content: space-evenly;

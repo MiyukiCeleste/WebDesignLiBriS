@@ -1,0 +1,62 @@
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding:10px;
+    margin: 1vw 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.book-card {
+    height:20em !important;
+    width: 12em !important;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    padding: 20px 15px 12px 15px;
+    margin: 6% 3%;
+
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.book-card:hover {
+    transform: scale(1.02);
+}
+
+.book-image {
+    max-height:60% !important;
+    width:auto;
+}
+
+.author {
+    font-family:"Carlito";
+    font-size: 0.8em;
+    color: #707070;
+    margin:8% 0 0 0;
+}
+
+a .title {
+    font-family:"Carlito";
+    font-size: 0.9em;
+    font-weight:700;
+    color:#000;
+}
+
+.price {
+    font-family:"Carlito";
+    font-size: 1em;
+    color: #00337b;
+    font-weight:750;
+    margin: 5% 0;
+}

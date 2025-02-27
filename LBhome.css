@@ -1,46 +1,3 @@
-/* Banner Section */
-.banner {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    width: 70%;
-    margin: 20px 0;
-    gap: 20px;
-  }
-  
-  .large-banner {
-    flex: 2;
-    flex-wrap: wrap;
-    height: 24vw;
-    background: linear-gradient(90deg, #66a6ff, #89f7fe);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-
-  .large-banner i {
-    flex-wrap: wrap;
-    font-family:"ADLaM Display";
-    font-size: 4vw;
-    color: #FFF;
-    padding: 0 18vw;
-    font-style: normal;
-  }
-
-  .large-banner span {
-    flex-wrap: wrap;
-    font-family:"ADLaM Display";
-    font-size: 6vw;
-    color: #FFF;
-    padding: 0 13.5vw;
-  }
-
-  .large-banner:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 6px rgba(82, 126, 165, 0.15);
-  }
-  
-  /* Book Categories */
   .categories {
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +23,6 @@
 
     background-color:#FFF !important;
     font-weight:600 !important;
-
     cursor: pointer;
   }
   
@@ -75,7 +31,9 @@
     transform: scale(1.05);
   }
 
-  /* Book Cards Section */
+
+
+  
   a{
     text-decoration: none !important;
   }
@@ -132,4 +90,3 @@
     color: #00337b;
     font-weight:750;
   }
-  
